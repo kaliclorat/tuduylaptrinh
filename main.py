@@ -63,7 +63,7 @@ class MainWindow(QMainWindow):
                 QMessageBox.warning(self, "Thất bại", message)
                 self.logic.selected_ingredients.clear()
                 self.thanh_phan.clear()
-
+wtf = 'bro'
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
