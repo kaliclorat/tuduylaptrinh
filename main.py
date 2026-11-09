@@ -2,8 +2,8 @@ import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QDialog, QVBoxLayout, QLabel, QPushButton
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import QTimer, Qt
-from giaodien_cf import Ui_MainWindow
-from thuat_toan import CafeLogic
+from giaodien import Ui_MainWindow
+from thuật_toán import CafeLogic
 
 
 class ResultDialog(QDialog):
@@ -95,11 +95,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if is_correct:
                 # Hiện cửa sổ Mèo Like khi làm đúng món
                 dialog = ResultDialog("cat_like.jpg", message, self)
+                QTimer.singleShot(1000, dialog.accept)
                 dialog.exec()
                 self.new_customer_order()
             else:
                 # Hiện cửa sổ Mèo Khóc khi pha sai món
                 dialog = ResultDialog("cat_cry.jpg", message, self)
+                QTimer.singleShot(1000, dialog.accept)
                 dialog.exec()
                 self.logic.selected_ingredients.clear()
                 self.thanh_phan.clear()
