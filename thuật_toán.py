@@ -12,13 +12,14 @@ class CafeLogic:
         }
         self.current_order = ""
         self.selected_ingredients = set()
-        self.time_left = 60
-
+        self.time_left = 5
+        self.current_score = 0
+        self.kyluc = 0
     def generate_random_order(self):
         """Tạo ngẫu nhiên 1 món đồ uống từ menu"""
         self.current_order = random.choice(list(self.menu_recipes.keys()))
         self.selected_ingredients.clear()
-        self.time_left = 60
+        self.time_left = 5
         return self.current_order
 
     def add_ingredient(self, ingredient_name):
@@ -37,3 +38,11 @@ class CafeLogic:
             return True, f"Chính xác! Đã làm xong {self.current_order}!"
         else:
             return False, "Chưa đúng công thức rồi, thử lại xem!"
+    def score(self, is_correct):
+        if is_correct:
+            self.current_score += 5
+        else:
+            self.current_score -= 3
+        if self.current_score > self.kyluc:
+            self.kyluc = self.current_score
+        return self.current_score
