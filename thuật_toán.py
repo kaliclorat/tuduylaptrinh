@@ -8,7 +8,8 @@ class CafeLogic:
             "Cà phê sữa": {"CÀ PHÊ", "SỮA", "ĐÁ"},
             "Trà đào": {"TRÀ", "ĐÀO", "ĐÁ"},
             "Matcha": {"MATCHA", "SỮA", "ĐÁ"},
-            "Trà đá": {"TRÀ", "ĐÁ"}
+            "Trà đá": {"TRÀ", "ĐÁ"},
+            "Trà sữa": {'TRÀ', 'SỮA', 'ĐÁ'}
         }
         self.current_order = ""
         self.selected_ingredients = set()
