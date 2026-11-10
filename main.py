@@ -102,7 +102,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 dialog = ResultDialog("cat_like.jpg", message, self)
                 dialog.exec()
                 self.new_customer_order()
-                self.update_timer()
             else:
                 # Hiện cửa sổ Mèo Khóc khi pha sai món
                 dialog = ResultDialog("cat_cry.jpg", message, self)
