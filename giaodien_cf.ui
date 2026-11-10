@@ -63,9 +63,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <widget class="QLabel" name="con_meo">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>170</y>
-      <width>111</width>
+      <x>180</x>
+      <y>160</y>
+      <width>91</width>
       <height>81</height>
      </rect>
     </property>
@@ -73,14 +73,14 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string notr="true">font: 75 36pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>😺</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt;&quot;&gt;😺&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="menu">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>130</y>
+      <x>530</x>
+      <y>140</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -91,7 +91,7 @@ font-weight: bold;
 </string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;MENU&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;RECIPE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="khach">
@@ -268,6 +268,16 @@ background-color: rgb(255, 255, 127);
       <string>Trà đá = trà + đá</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Trà sữa = trà + sữa + đá</string>
+     </property>
+    </item>
    </widget>
    <widget class="QLineEdit" name="thanh_phan">
     <property name="geometry">
@@ -323,8 +333,8 @@ border-radius: 15px
    <widget class="QLineEdit" name="diem">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>510</y>
+      <x>710</x>
+      <y>0</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -336,8 +346,8 @@ border-radius: 15px
    <widget class="QLineEdit" name="kyluc">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>530</y>
+      <x>710</x>
+      <y>20</y>
       <width>91</width>
       <height>21</height>
      </rect>
